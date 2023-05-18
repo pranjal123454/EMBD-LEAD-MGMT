@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMBD Lead MGMT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    {% comment %} <a href="/leads/">Go back to leads</a> {% endcomment %}
+    <a  href="/leads/" ><button class="flex text-white bg-indigo-500 border-0 focus:outline-none hover:bg-indigo-600 py-2 px-2 mx-1 rounded mt-5">Go back to Clients </button></a>
+    <hr>
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">CLient</h2>
+              <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">{{lead.first_name}} {{lead.last_name}}</h1>
+              <div class="flex mb-4">
+                <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Description</a>
+                {% comment %} <a class="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Reviews</a> {% endcomment %}
+                <a href="/leads/{{lead.pk}}/update" class="flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">Update</a>
+              </div>
+              <form method="post" >
+                {%csrf_token%}
+                 {{form.as_p}}
+                 <button type="submit" >submit</button>
+                </form>
+              <div class="flex">
+                
+              
+                <a  href="/leads/{{lead.pk}}/delete" ><button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded mt-5">Delete Lead </button></a>
+              </div>
+            </div>
+            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://img.freepik.com/free-vector/team-goals-concept-illustration_114360-5146.jpg?w=826&t=st=1678880188~exp=1678880788~hmac=0f7cee351748ccc271ce4554d184d0251d7999c6253793d75b4bc71bfa2c7a83">
+          </div>
+        </div>
+      </section>
+  
+
+
+    
+  </body>
+</html>

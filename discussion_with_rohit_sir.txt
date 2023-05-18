@@ -1,0 +1,10 @@
+           
+ (11/04/2023):-	
+    Introduction:-
+---------------------------Lead Management System --------------------------------
+1.Start Date
+2.End Date of client
+3actions also include
+3.seprate leads and client
+4.one to many fields in actions
+

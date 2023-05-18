@@ -1,0 +1,6 @@
+1.start date of lead
+2.name of resouce assigned to lead
+3.service type full time/part time/adhoc
+4.active and inactive or paused  lead
+5.closure=successfully completed/withdrawn escalleted/withdrawn client side/
+

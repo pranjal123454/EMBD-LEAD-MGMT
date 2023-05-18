@@ -1,0 +1,84 @@
+.h{
+    color:rebeccapurple;
+}
+.login{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-text{
+    /* text-align: center; */
+    font-size: 40px;
+}
+.green{
+    color:green;
+    font-style: bold;
+    font-weight: 900;
+}
+.form-create-lead{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 24rem;
+    font-size: 27px;
+}
+.form-create-lead>input{
+    /* border: 1px solid black; */
+}
+#id_first_name{
+    border: 1px solid black;
+    margin-left: 117px;
+
+}
+#id_last_name{
+    border: 1px solid black;
+    margin-left: 118px;
+
+}
+#id_requirement{
+    border: 1px solid black;
+    margin-left: 87px;
+
+}
+#id_country{
+    border: 1px solid black;
+    margin-left: 144px;
+
+}
+
+#id_service_id{
+    border: 1px solid black;
+    margin-left: 123px;
+
+}
+#id_service_tenure{
+    border: 1px solid black;
+    margin-left: 68px;
+
+}
+#id_service_type{
+    border: 1px solid black;
+    margin-left: 93px;
+
+}
+#id_service_active{
+    border: 1px solid black;
+    margin-left: 76px;
+
+}
+#id_age{
+    border: 1px solid black;
+    margin-left: 188px;
+
+}
+#id_agent{
+    border: 1px solid black;
+    margin-left: 166px;
+}
+.sub-button{
+    width:38%;
+}
+
+
